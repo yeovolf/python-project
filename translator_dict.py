@@ -16,7 +16,7 @@ while trans_language not in language:
   )
 else:
   Word = str(input("Enter the word you need the translation  the into chosen language: \n"))
-  
+
 # check if the work is in memory
   if Word in English_to_French or Word in French_to_English:
     
@@ -24,16 +24,16 @@ else:
     if trans_language == "french":
       if Word in English_to_French:
         translate = English_to_French[Word]
-        print(f"the translation of {Word} in french is {translate}")
+        print(f"\nthe translation of {Word} in french is {translate}")
       else:
-        print(f"{Word} is not in my english to french dictionary memory")
-        
+        print(f"\n{Word} is not in my english to french dictionary memory")
+
 # give the french translation of the english word
     elif trans_language == "english":
       if Word in French_to_English:
         translate = French_to_English[Word]
-        print(f"the translation of {Word} in english is {translate}")
+        print(f"\nthe translation of {Word} in english is {translate}")
       else:
-        print(f"{Word} is not in my french to english dictionary memory")
+        print(f"\n{Word} is not in my french to english dictionary memory")
   else:
-    print(f"{Word} is not in my memory")  
+    print(f"\n{Word} is not in my memory")  

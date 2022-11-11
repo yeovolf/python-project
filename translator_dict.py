@@ -7,21 +7,24 @@ French_to_English ={"eau" : "water","stylo" : "pen", "combat" : "battle", "boute
  }
 
 language = ["french", "english"]
-trans_language = ""
+translate_language = ""
 word = ""
 
 # repeat if the the loop if user enter a language different that french or english
-while trans_language not in language:
-  trans_language = str(input("Enter the translate either french or english: \n")
-  )
+while translate_language not in language:
+  translate_language = str(input("Enter the translate either french or english: \n")
+  ).lower()
 else:
-  Word = str(input("Enter the word you need the translation  the into chosen language: \n"))
+
+  
+  Word = str(input("Enter the word you need the translation  the into chosen language: \n")).lower()
+  
 
 # check if the work is in memory
   if Word in English_to_French or Word in French_to_English:
     
 # give the french translation of the english word
-    if trans_language == "french":
+    if translate_language == "french":
       if Word in English_to_French:
         translate = English_to_French[Word]
         print(f"\nthe translation of {Word} in french is {translate}")
@@ -29,7 +32,7 @@ else:
         print(f"\n{Word} is not in my english to french dictionary memory")
 
 # give the french translation of the english word
-    elif trans_language == "english":
+    elif translate_language == "english":
       if Word in French_to_English:
         translate = French_to_English[Word]
         print(f"\nthe translation of {Word} in english is {translate}")

@@ -1,5 +1,5 @@
 # python-project
-<h1> Find the last name of an employee in a dictionary</h1}
+<h1> Find the last name of an employee in a dictionary</h1>
 
 ```
 d = {

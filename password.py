@@ -8,7 +8,7 @@ password = ""
 count = 0 
 limite = 5
 
-while count < limit:
+while count < limite:
   count += 1
   
   username= str(input("enter your username\n")).lower()

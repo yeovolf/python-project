@@ -1,11 +1,12 @@
 #This Program will first ask a user for a username and password using while loop
 
 credential = {
-  "username":"soho" ,
+ "username":"soho" ,
   "password" : "Yeo"}
 username = ""
 password = ""
-n = 0       
+count = 0 
+limit = 5      
 while n < 5:
   username= str(input("enter your username\n")).lower()
   password= str(input("enter your passwor\n")).lower()
